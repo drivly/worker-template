@@ -1,5 +1,6 @@
 // import { json } from 'https://pkg.do/apis.do'
+import { json } from 'http://pkg.do/itty-router-extras'
 
 export default {
-  fetch: req => fetch('https://ctx.do/api') //new Response(JSON.stringify({ hello: req.cf.city }, null, 2)) 
+  fetch: req => json(req.cf)
 }
