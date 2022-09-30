@@ -1,5 +1,5 @@
-import { json } from 'https://pkg.do/apis.do'
+// import { json } from 'https://pkg.do/apis.do'
 
 export default {
-  fetch: req => json({ hello: req.cf.city }) 
+  fetch: req => new Response(JSON.stringify({ hello: req.cf.city }, null, 2)) 
 }
